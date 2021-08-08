@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    color: #637588;
+    font-size: 16px;
+    overflow-y: scroll;
+    letter-spacing: 0.1em;
+}
+h1 {
+    font-family: "Roboto Slab", serif;
+    font-size: 3.75rem;
+    letter-spacing: 0.08em;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.2em;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn {
+min-width: 250px;
+height: 60px;
+font-size: 1.125rem;
+letter-spacing: 0.1em;
+border: 2px solid #ffffff;
+background-color: rgba(255, 255, 255, 0.1);
+padding-left: 1em;
+padding-right: 1em;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.5s;
+}
+.btn:hover,
+.btn:focus {
+    background-color: #d66926;
+}
+.header {
+    position: relative;
+    background-color: #2d3651;
+    color: #ffffff;
+    min-height: 100vh;
+    background-image: url(../img/img-header.png);
+    background-size: cover;
+    background-position: center;
+
+    display: grid;
+    align-content: center;
+}
+.header-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+
+}
+.header-content__title {
+    margin: 0 0 53px;
+}
+.header-content__actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.header-content__container,
+.header-menu__container {
+    max-width: 1340px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-menu {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: #2d3651;
+    opacity: 0.8;
+}
+.header-menu__container {
+    display: grid;
+    gap: 20px ;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+.header-logo {
+    font-size: 1.5rem;
+    letter-spacing: 0.22em;
+
+}
+.header-logo__link {
+    display: block;
+    padding: 20px ;
+}
+.header-logo__accent {
+    display: inline-block;
+    padding: 12px 1px 16px 5px;
+    border:3px solid #d53d27 ;
+    margin-right: 3px;
+}
+
+.header-navbar {
+}
+.header-navbar__btn {
+    display: none;
+}
+
+.header-navbar__list {
+    margin: 0 -10px 0 0 ;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    justify-content:end;
+    grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+    gap: 20px;
+}
+.header-navbar__link {
+    display: block;
+    padding: 20px 10px;
+    font-size: 1.125rem;
+    transition: color 0.25s;
+    letter-spacing: 0.1em;
+}
+.header-navbar__item {}
+
+.header-navbar__link:hover,
+.header-navbar__link:focus {
+    color: #d66926;
+}
