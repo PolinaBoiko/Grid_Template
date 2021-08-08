@@ -75,7 +75,9 @@ transition: 0.5s;
     padding-left: 20px;
     padding-right: 20px;
 }
-
+.header-content__container{
+    display: grid;
+}
 .header-menu {
     position: absolute;
     z-index: 2;
@@ -92,9 +94,9 @@ transition: 0.5s;
 }
 .header-menu__container {
     display: grid;
-    gap: 20px ;
     grid-template-columns: auto 1fr;
     align-items: center;
+    gap: 20px;
 }
 .header-logo {
     font-size: 1.5rem;
@@ -103,7 +105,7 @@ transition: 0.5s;
 }
 .header-logo__link {
     display: block;
-    padding: 20px ;
+    padding: 20px 20px 20px 0;
 }
 .header-logo__accent {
     display: inline-block;
