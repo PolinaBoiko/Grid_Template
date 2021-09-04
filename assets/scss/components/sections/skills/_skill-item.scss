@@ -5,7 +5,7 @@
 
   &:hover {
     .skill-item__link {
-      color: #d66926;
+      color: $color-accent;
     }
     .skill-item__image {
       transform: scale(1.1);
@@ -38,7 +38,7 @@
 
     transition: transform 0.5s;
 
-    background-color: #2d3651;
+    background-color: $color-primary;
     background-position: center;
     background-size: cover;
 
@@ -50,7 +50,7 @@
     transition: opacity 0.5s;
 
     opacity: 0.8;
-    background-color: #2d3651;
+    background-color: $color-primary;
 
     inset: 0;
   }

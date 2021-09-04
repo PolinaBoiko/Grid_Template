@@ -11,26 +11,26 @@
   transition: 0.5s;
   letter-spacing: 0.1em;
 
-  border: 2px solid #ffffff;
+  border: 2px solid $color-lightf;
   background-color: rgba(255, 255, 255, 0.1);
 
   font-size: 1.125rem;
   &:hover,
   &:focus {
-    background-color: #d66926;
+    background-color: $color-accent;
   }
 }
 .btn--light {
   min-width: 250px;
 
-  border: 2px solid #ffffff;
-  background-color: rgba(#ffffff, 0.1);
+  border: 2px solid $color-light;
+  background-color: rgba($color-light, 0.1);
 }
 
 .btn--primary {
   min-width: 350px ;
 
-  border: 2px solid #2d3651;
-  background-color: rgba(#2d3651 ,0.8) ;
+  border: 2px solid $color-primary;
+  background-color: rgba($color-primary ,0.8) ;
 }
 
