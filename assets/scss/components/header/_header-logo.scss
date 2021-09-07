@@ -1,3 +1,6 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
 .header-logo {
   letter-spacing: 0.22em;
 
@@ -5,7 +8,7 @@
   &__link {
     display: block;
 
-    padding: 20px 20px 20px 0;
+    padding: $gap $gap $gap 0;
   }
   &__accent {
     display: inline-block;
